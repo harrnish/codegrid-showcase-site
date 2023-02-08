@@ -66,6 +66,9 @@ function App() {
                   <a href="https://codegrid.gumroad.com/">CodegridPRO ↗</a>
                 </div>
                 <div className="link">
+                  <a href="https://discord.com/invite/8jf6bkqSGF/">Discord ↗</a>
+                </div>
+                <div className="link">
                   <a href="https://twitter.com/codegridweb">Twitter ↗</a>
                 </div>
                 <div className="link">
