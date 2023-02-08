@@ -1,38 +1,197 @@
-.App {
-  text-align: center;
+:root {
+  --code-gray: #141414;
+  --green-spring: #bac4b8;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::-moz-selection {
+  color: var(--code-gray);
+  background: var(--green-spring);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::selection {
+  color: var(--code-gray);
+  background: var(--green-spring);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("../public/fonts/NeueMontreal-Light.otf") format("opentype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("../public/fonts/NeueMontreal-Regular.otf") format("opentype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("../public/fonts/NeueMontreal-Medium.otf") format("opentype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("../public/fonts/NeueMontreal-Bold.otf") format("opentype");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Timmons Ny";
+  src: url("../public/fonts/Timmons-Ny-Regular.otf") format("opentype");
+}
+
+/* global */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  width: 100%;
+  background: var(--code-gray);
+  color: var(--green-spring);
+  overflow-x: hidden;
+  font-family: "Neue Montreal", sans-serif;
+  text-transform: uppercase;
+}
+
+/* nav */
+
+nav {
+  /* border: 1px solid var(--green-spring); */
+  width: 100%;
+  height: 80px;
+  padding: 3em 1em;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+}
+
+nav #logo,
+nav #cta {
+  line-height: 80px;
+}
+
+nav #logo {
+  font-family: "Timmons Ny";
+  font-size: 50px;
+}
+
+nav #cta {
+  line-height: 120%;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+nav #cta a {
+  text-decoration: none;
+  color: var(--green-spring);
+}
+
+/* header */
+
+header {
+  /* border: 1px solid var(--green-spring); */
+  margin: 2em 0 0em 0;
+  padding: 3em 1em;
+}
+
+header h1 {
+  font-family: "Timmons Ny";
+  font-weight: 500;
+  font-size: 50vw;
+  line-height: 80%;
+}
+
+/* about */
+
+.about {
+  margin-bottom: 3em;
+  padding: 1em;
+}
+
+.about p {
+  line-height: 120%;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.about p span {
+  opacity: 0.5;
+  font-weight: 500;
+}
+
+/* socials */
+
+.socials {
+  padding: 3em 1em;
+}
+
+.socials span {
+  line-height: 120%;
+  font-size: 10px;
+  opacity: 0.5;
+  font-weight: 500;
+}
+
+.socials .social-links {
+  margin-left: 5em;
+}
+
+.socials .social-links .link {
+  margin: 1em 0;
+}
+
+.socials .social-links .link a {
+  text-decoration: none;
+  color: var(--green-spring);
+  line-height: 120%;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+/* footer */
+
+footer {
+  padding: 1em;
+  margin: 2em 0 3em 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer p {
+  line-height: 120%;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+footer #copyright {
+  text-align: right;
+}
+
+/* desktop version */
+
+.desktop-version {
+  width: 100%;
+  height: 100vh;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 2em;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.desktop-version p {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 120%;
+  font-size: 40px;
+  font-weight: 700;
 }
