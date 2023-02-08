@@ -47,8 +47,8 @@ function App() {
               <p>
                 <span>(Background)</span>
                 <br />
-                Codegrid sprang to life on September 27<sup>th</sup>, 2017 as a
-                means of documenting the processes of learning and creating. The
+                Codegrid sprang to life on September 27th, 2017 as a means of
+                documenting the processes of learning and creating. The
                 objective is to help learners shine in the digital world,
                 elevating their skills in web design and development, wrapped in
                 a sleek and contemporary aestheticS.
